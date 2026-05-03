@@ -1,11 +1,11 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-const required = (key: string): string => {
-  const val = process.env[key];
-  if (!val) throw new Error(`Missing required env var: ${key}`);
-  return val;
-};
+// const required = (key: string): string => {
+//   const val = process.env[key];
+//   if (!val) throw new Error(`Missing required env var: ${key}`);
+//   return val;
+// };
 
 export const config = {
   env: process.env.NODE_ENV || 'development',
